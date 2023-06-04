@@ -660,7 +660,6 @@ section h3::before
 {
         transform: translateX(0);
 	height: 500px;
-	position: relative;
         transition: .7s transform ease-in-out;
         background-image:url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg') center center;
         background-size:cover;
