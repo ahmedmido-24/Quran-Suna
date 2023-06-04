@@ -212,51 +212,51 @@ function getSurahs()
         });
     }
     
-//     function getPrayTimes(city, country) {
-//     let date = new Date().toISOString().split('T')[0]; // Get the current date in YYYY-MM-DD format
-//     let url = `http://api.aladhan.com/v1/timingsByCity/${date}?city=${city}&country=${country}&method=8`;
+    function getPrayTimes(city, country) {
+    let date = new Date().toISOString().split('T')[0]; // Get the current date in YYYY-MM-DD format
+    let url = `http://api.aladhan.com/v1/timingsByCity/${date}?city=${city}&country=${country}&method=8`;
     
-//     fetch(url)
-//         .then(response => response.json())
-//         .then(data => {
-//         let times = data.data.timings;
-//         cards.innerHTML = "";
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+        let times = data.data.timings;
+        cards.innerHTML = "";
     
-//         // Translate each time value to Arabic
-//         const translations = {
-//             Fajr: "الفجر",
-//             Dhuhr: "الظهر",
-//             Asr: "العصر",
-//             Maghrib: "المغرب",
-//             Isha: "العشاء",
-//             Sunrise: "شروق الشمس",
-//             Sunset: "غروب الشمس",
-//             Imsak: "الامساك",
-//             Midnight: "منتصف اليل",
-//         };
+        // Translate each time value to Arabic
+        const translations = {
+            Fajr: "الفجر",
+            Dhuhr: "الظهر",
+            Asr: "العصر",
+            Maghrib: "المغرب",
+            Isha: "العشاء",
+            Sunrise: "شروق الشمس",
+            Sunset: "غروب الشمس",
+            Imsak: "الامساك",
+            Midnight: "منتصف اليل",
+        };
     
-//         for (let time in times) {
-//             let translatedTime = translations[time] || time; // Use the translated value if available, otherwise use the original time
+        for (let time in times) {
+            let translatedTime = translations[time] || time; // Use the translated value if available, otherwise use the original time
     
-//             let timeValue = new Date(`2000-01-01T${times[time]}`); // Create a Date object with the time value
-//             let formattedTime = timeValue.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' }); // Format the time to a 12-hour format
+            let timeValue = new Date(`2000-01-01T${times[time]}`); // Create a Date object with the time value
+            let formattedTime = timeValue.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' }); // Format the time to a 12-hour format
     
-//             cards.innerHTML +=
-//             `
-//             <div class="card">
-//                 <div class="circle">
-//                 <svg>
-//                     <circle cx="100" cy="100" r="100"></circle>
-//                 </svg>
-//                 <div class="praytime">${formattedTime}</div>
-//                 </div>
-//                 <p>${translatedTime}</p>
-//             </div>
-//             `;
-//         }
-//         })
-//         .catch(error => {
-//         console.error('Error:', error);
-//         });
-//     }
+            cards.innerHTML +=
+            `
+            <div class="card">
+                <div class="circle">
+                <svg>
+                    <circle cx="100" cy="100" r="100"></circle>
+                </svg>
+                <div class="praytime">${formattedTime}</div>
+                </div>
+                <p>${translatedTime}</p>
+            </div>
+            `;
+        }
+        })
+        .catch(error => {
+        console.error('Error:', error);
+        });
+    }
 
