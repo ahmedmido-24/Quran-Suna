@@ -126,7 +126,7 @@ section h3::before
 }
 /*main section*/
 .main{
-    background: url(../photo/wallpaperflare.com_wallpaper\ \(21\).jpg) center center/cover no-repeat;
+    background: url(photo/wallpaperflare.com_wallpaper\ \(21\).jpg) center center/cover no-repeat;
     padding: 0;
 }
 .main .title 
