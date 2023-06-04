@@ -659,9 +659,8 @@ section h3::before
 .surah-popup.active
 {
         transform: translateX(0);
-	height: 500px;
         transition: .7s transform ease-in-out;
-        background-image:url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg') center center;
+        background-image:url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
         background-size:cover;
 	background-position: center;
         background-repeat: no-repeat;
