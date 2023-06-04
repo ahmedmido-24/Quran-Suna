@@ -809,9 +809,15 @@ section h3::before
 }
 @media (max-width : 1024px)
 {
+	.container
+	{
+	width: 100%;
+	overflow-x: hidden;
+	}
     .lectures-container .right,.lectures-container .left
     {
-        width: auto;
+        width: 100%;
+	overflow-x: hidden;
     }
     .header .bars
     {
