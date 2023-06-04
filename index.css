@@ -811,7 +811,7 @@ section h3::before
 {
     .lectures-container .right,.lectures-container .left
     {
-        width: 98%;
+        width: auto;
     }
     .header .bars
     {
