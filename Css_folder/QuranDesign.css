@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background: url(../images/back.jpg) center center/cover no-repeat fixed;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* player */
+.player {
+    background: linear-gradient(to right, #000, #434343);
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    margin: 10px 0;
+    z-index: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.player .ayah {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.player audio {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.player .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #13162f;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.surahs>div {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    width: calc(100% - 90px);
+    transition: 0.4s color ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    font-size: 20px;
+    counter-increment: surah-counter;
+    -webkit-transition: 0.4s color ease;
+    -moz-transition: 0.4s color ease;
+    -ms-transition: 0.4s color ease;
+    -o-transition: 0.4s color ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.surahs>div::after {
+    position: absolute;
+    content: counter(surah-counter);
+    top: 0%;
+    left: -90px;
+    height: 70px;
+    width: 70px;
+    background-color: inherit;
+    transform: translateY(5px);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 70px;
+    box-shadow: inherit;
+    text-align: center;
+    transition: inherit;
+    transition: 0.4s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -ms-transition: inherit;
+    -o-transition: inherit;
+}
+
+.surahs>div::before {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-color: transparent #f00 transparent transparent;
+    left: -30px;
+    top: 25px;
+    transition: 0.4s;
+}
+
+.surahs>div:hover,
+.surahs>div:hover::after {
+    background: linear-gradient(to right, #000, #434343);
+    color: #fff;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
