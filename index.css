@@ -840,8 +840,7 @@ section h3::before
         margin: 15px 0;
     }
 }
-@media (max-width: 500px) {
-    /* CSS rules for small screens */
+/* @media (max-width: 500px) {
     .container
     {
         max-width: 750px;
@@ -850,7 +849,7 @@ section h3::before
         position: relative;
         padding: 0 2px;
     }
-}
+} */
 /* @media (min-width: 992px) {
     .container {
     max-width:  970px;
