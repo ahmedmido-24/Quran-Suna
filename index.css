@@ -821,7 +821,7 @@ section h3::before
 	.container
 	{
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	}
     .lectures-container .right,.lectures-container .left
     {
@@ -857,6 +857,7 @@ section h3::before
     .surah-popup.active
 {
     background: #707b9b;
+	
 }
 }
 
@@ -868,6 +869,7 @@ section h3::before
 
     padding: 0 10px; /* Adds some padding to the sides for better readability */
 
+	  overflow: hidden;
   }
 
 }
