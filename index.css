@@ -25,7 +25,7 @@ ul,li
 .container
 {
    /* max-width: 1450px;*/
-    width: 100%;
+    width: 80%;
     margin: 0 auto ;
     position: relative;
     padding: 0 10px;
