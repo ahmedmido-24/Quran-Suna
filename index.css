@@ -850,6 +850,10 @@ section h3::before
     {
         margin: 15px 0;
     }
+    .surah-popup.active
+{
+    background: #707b9b;
+}
 }
 /* @media (max-width: 500px) {
     .container
