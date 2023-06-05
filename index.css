@@ -661,8 +661,9 @@ section h3::before
         transform: translateX(0);
         transition: .7s transform ease-in-out;
         background-image:url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
-	background-repeat: no-repeat;
-  	background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
         -webkit-animation-fill-mode: forwards;
@@ -675,6 +676,8 @@ section h3::before
         -moz-transition: .7s transform ease-in-out;
         -ms-transition: .7s transform ease-in-out;
         -o-transition: .7s transform ease-in-out;
+	max-width: 100%;
+        height: auto;
 }
 @-webkit-keyframes slidein {
     from {background-position: top; background-size:3000px; }
@@ -717,11 +720,13 @@ section h3::before
 .surah-popup .ayat
 {
     padding: 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 10px);
     margin-top: 25px;
     margin-right: 40px;
     color: #121212;
     text-align: center;
+     height: auto;
+
 }
 
 .Btn {
@@ -778,7 +783,7 @@ section h3::before
 {
     line-height: 2;
     width: 100%;
-    border-bottom: 2px solid #43a047;  /* to make a border between line in quran*/ 
+    border-bottom: 2px solid #15281a;  /* to make a border between line in quran*/ 
     margin-bottom: 10px;
     font-family: 'Cairo', sans-serif;
     font-style: oblique;
