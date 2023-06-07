@@ -581,16 +581,18 @@ section h3::before
     }
     
     .icon-link {  
-        display: inline-flex;
-        font-size: 3rem;  
-        text-decoration: none;  
-        color: var(--color-icon);
-        width: 6rem;
-        height: 6rem;   
-        transition: .5s linear;
-        position: relative;
-        z-index: 1;
-        margin: auto
+    display: flex;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--color-icon);
+    width: auto;
+    height: auto;
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
     }
     
     .icon-link:hover {
