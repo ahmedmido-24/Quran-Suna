@@ -655,7 +655,7 @@ section h3::before
     right: 0;
     z-index: 2;
     background-color: #dfd9d9;
-    overflow-y: scroll;
+    overflow-x: scroll;
     transform: translateX(100%);
     color: #000;
 }
