@@ -684,6 +684,8 @@ section h3::before
         -o-transition: .7s transform ease-in-out;
 	max-width: 100%;
         height: auto;
+        overflow-x: hidden;
+
 }
 @-webkit-keyframes slidein {
     from {background-position: top; background-size:3000px; }
@@ -856,12 +858,12 @@ section h3::before
     {
         margin: 15px 0;
     }
-    .surah-popup.active
+  /*  .surah-popup.active
 {
     background: #707b9b;
 	
 }
-}
+}*/
 
 @media (max-width: 768px) {
 
