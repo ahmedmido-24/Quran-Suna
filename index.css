@@ -657,7 +657,7 @@ section h3::before
     right: 0;
     z-index: 2;
     background-color: #dfd9d9;
-    overflow-x: scroll;
+    overflow-x: hidden;;
     transform: translateX(100%);
     color: #000;
 }
@@ -873,6 +873,9 @@ section h3::before
 
 	  overflow: hidden;
   }
+	.section_Social {
+		    display: none;
+	}
 
 }
 /* @media (max-width: 500px) {
