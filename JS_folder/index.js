@@ -151,6 +151,7 @@ function getSurahs()
         });
     }); 
     ///////////
+/*
     locationForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -173,7 +174,7 @@ function getSurahs()
         .then(data => {
         let times = data.data.timings;
         cards.innerHTML = "";
-    
+    */
         // Translate each time value to Arabic
         const translations = {
             Fajr: "الفجر",
