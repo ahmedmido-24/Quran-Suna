@@ -28,10 +28,11 @@ let hadithContainer =document.querySelector('.hadithContainer'),
     HadithChanger();
 function HadithChanger()
 {
-fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/ara-abudawud.json")// Url////////////////////////////
+//fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/ara-abudawud.json")// Url////////////////////////////
+    fetch("https://api.hadith.sutanlanb.id/books/muslim?range-1-300")
     .then(response => response.json())
     .then(data =>{
-            let AlHadiths = data.hadiths;// to enter the json file enter {data} then the name of section you want to {ex}
+            let AlHadiths = data.data.hadiths;// to enter the json file enter {data} then the name of section you want to {ex}
             changeHadith();
             next.addEventListener('click',()=>{
                 hadithIndex == 5272 ? hadithIndex = 0 :hadithIndex++;
@@ -151,7 +152,7 @@ function getSurahs()
         });
     }); 
     ///////////
-/*
+
     locationForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -174,7 +175,7 @@ function getSurahs()
         .then(data => {
         let times = data.data.timings;
         cards.innerHTML = "";
-    */
+    
         // Translate each time value to Arabic
         const translations = {
             Fajr: "الفجر",
