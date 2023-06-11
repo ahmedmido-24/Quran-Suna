@@ -35,18 +35,19 @@ function HadithChanger()
             let AlHadiths = data.data.hadiths;// to enter the json file enter {data} then the name of section you want to {ex}
             changeHadith();
             next.addEventListener('click',()=>{
-                hadithIndex == 5272 ? hadithIndex = 0 :hadithIndex++;
+                hadithIndex == 100 ? hadithIndex = 0 :hadithIndex++;
+//                 hadithIndex == 5272 ? hadithIndex = 0 :hadithIndex++;
                 changeHadith()
             })
 
             prev.addEventListener('click', ()=>{
-                hadithIndex == 0 ? hadithIndex = 5272 :hadithIndex--;
+                hadithIndex == 0 ? hadithIndex = 100 :hadithIndex--;
                 changeHadith()
             })
             function changeHadith()
             {
                 hadithContainer.innerText = AlHadiths[hadithIndex].text; // here you change the innerText in the section
-                number.innerText = `5272 / ${hadithIndex + 1}` // to make it count
+                number.innerText = `100 / ${hadithIndex + 1}` // to make it count
             }
     })
 }
